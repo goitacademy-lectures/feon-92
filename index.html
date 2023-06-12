@@ -10,54 +10,83 @@
     />
     <title>SIMPLY CHOCOLATE</title>
     <link rel="shortcut icon" href="./images/favicon.svg" type="image/svg" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body class="page">
     <!-- Header section -->
-    <header>
-      <nav>
-        <a href="">Web<span>Studio</span></a>
-        <a href="./index.html">
-          SIMPLY CHOCOLATE
-          <img src="./images/header/logo.svg" alt="Simply Chocolate logo" width="24" height="24" />
+    <header class="header">
+      <nav class="header-nav">
+        <a class="header-logo" href="./index.html">
+          <span class="header-logo-italic">SIMPLY</span>CHOCOLATE
+          <img
+            class="header-img"
+            src="./images/header/logo.svg"
+            alt="Simply Chocolate logo"
+            width="24"
+            height="24"
+          />
         </a>
-        <ul>
-          <li>
-            <a href="./index.html">Home</a>
+        <ul class="header-list">
+          <li class="header-item">
+            <a class="header-link" href="./index.html">Home</a>
           </li>
-          <li>
-            <a href="#how">How it’s made?</a>
+          <li class="header-item">
+            <a class="header-link" href="#how">How it’s made?</a>
           </li>
-          <li>
-            <a href="#reviews">Chocolate is loved</a>
+          <li class="header-item">
+            <a class="header-link" href="#reviews">Chocolate is loved</a>
           </li>
         </ul>
       </nav>
-      <ul>
-        <li>
-          <a href="https://instagram.com" target="_blank" rel="noopener noroferrer">
+      <ul class="header-networks">
+        <li class="header-networks-item">
+          <a
+            class="header-networks-link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noroferrer"
+          >
             <img src="./images/header/instagram.svg" alt="Instagram logo" width="24" height="24" />
           </a>
         </li>
-        <li>
-          <a href="https://twitter.com" target="_blank" rel="noopener noroferrer">
+        <li class="header-networks-item">
+          <a
+            class="header-networks-link"
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noroferrer"
+          >
             <img src="./images/header/twitter.svg" alt="Twitter logo" width="24" height="24" />
           </a>
         </li>
       </ul>
     </header>
     <!-- Main block -->
-    <main>
+    <main class="main">
       <!-- Hero section -->
-      <section>
-        <h1>
+      <section class="section hero" id="section">
+        <h1 class="hero-title">
           Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
         </h1>
-        <button type="button">Buy now</button>
-        <a href="#how">How it’s made</a>
-        <button type="button">scroll down</button>
+        <button class="hero-btn" type="button">Buy now</button>
+        <a class="hero-link" href="#how">How it’s made</a>
+        <button class="hero-btn" type="button">scroll down</button>
       </section>
       <!-- Benefits section -->
-      <section>
+      <section class="section benefits">
         <h2 hidden>Benefits of SIMPLY CHOCOLATE</h2>
         <ul>
           <li>
@@ -91,7 +120,7 @@
         </ul>
       </section>
       <!-- Ingridients section -->
-      <section>
+      <section class="section ingridients">
         <h2><span></span></h2>
         <p></p>
         <ul>
@@ -124,7 +153,7 @@
         </ul>
       </section>
       <!-- How it's made section -->
-      <section id="how">
+      <section class="section made" id="how">
         <h2>hOW IT’S <span>made?</span></h2>
         <img src="./images/made/img.png" alt="" width="600" height="400" />
         <h3>Try our chocolates today and discover the perfect balance of flavor</h3>
@@ -145,7 +174,7 @@
         </ul>
       </section>
       <!-- Reviews section -->
-      <section id="reviews">
+      <section class="section reciews" id="reviews">
         <h2><span>chocolate</span> is loved</h2>
         <ul>
           <li>
@@ -177,7 +206,7 @@
       </section>
     </main>
     <!-- Footer section -->
-    <footer>
+    <footer class="footer">
       <p><span>Chocolate</span> a delicious cure for a bad day</p>
       <address>
         <p>Contact us</p>
