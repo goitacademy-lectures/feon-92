@@ -1,26 +1,70 @@
-/* Common styles */
+:root {
+  /* Font */
+  --primary-font: Montserrat, sans-serif;
+  --secondary-font: Roboto, sans-serif;
+
+  /* Colors */
+  --main-dark-cl: #111111;
+  --main-light-cl: #ffffff;
+  --accent-cl: #fd9222;
+  --grey-cl: rgba(255, 255, 255, 0.7);
+  --main-dark-bg: #1e1823;
+
+  /* Others */
+}
+
+/**
+  |============================
+  | Common styles
+  |============================
+*/
 body {
-  font-family: Montserrat, sans-serif;
+  font-family: var(--primary-font);
+  color: var(--main-dark-cl);
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
 }
 /* Reset */
+.list,
 ul,
 ol {
   list-style: none;
 }
+.link,
 a {
   text-decoration: none;
   color: currentColor;
 }
+.btn,
 button {
   font-family: inherit;
   cursor: pointer;
 }
-
+/* Base styles */
 .section {
 }
-/* .list {
-  list-style: none;
-} */
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+.title-accent {
+  color: var(--accent-cl);
+}
+.subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: normal;
+}
+.subtitle-accent {
+  color: var(--main-light-cl);
+}
 /**
   |============================
   | Header styles
@@ -35,7 +79,7 @@ button {
   font-size: 18px;
   line-height: 1.11;
   letter-spacing: -0.03em;
-  color: #111111;
+  color: var(--main-dark-cl);
 }
 .header-logo-italic {
   font-style: italic;
@@ -51,7 +95,7 @@ button {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: -0.02em;
-  color: #111111;
+  color: var(--main-dark-cl);
 }
 .header-networks {
 }
@@ -65,21 +109,21 @@ button {
   |============================
 */
 .hero {
-  background-color: #1e1823;
+  background-color: var(--main-dark-bg);
 }
 .hero-title {
   font-weight: 500;
   font-size: 28px;
   line-height: 1.21;
   letter-spacing: -0.03em;
-  color: #ffffff;
+  color: var(--main-light-cl);
 }
 .hero-btn {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
-  color: #ffffff;
-  background-color: #fd9222;
+  color: var(--main-light-cl);
+  background-color: var(--accent-cl);
 }
 .hero-link {
 }
@@ -88,3 +132,15 @@ button {
   | Benefits styles
   |============================
 */
+.benefits-desc {
+  color: var(--grey-cl);
+}
+
+/**
+  |============================
+  | Benefits section
+  |============================
+*/
+.benefits {
+  background-color: var(--main-dark-bg);
+}
