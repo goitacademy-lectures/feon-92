@@ -18,10 +18,7 @@
       rel="stylesheet"
     />
     <!-- Normalize -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" />
     <!-- Custom styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -29,7 +26,7 @@
     <!-- Header section -->
     <header class="header">
       <nav class="header-nav">
-        <a class="header-logo" href="./index.html">
+        <a class="header-logo link" href="./index.html">
           <span class="header-logo-italic">SIMPLY</span>CHOCOLATE
           <img
             class="header-img"
@@ -49,6 +46,9 @@
           <li class="header-item">
             <a class="header-link" href="#reviews">Chocolate is loved</a>
           </li>
+          <li class="header-item">
+            <a class="header-link" href="./portfolio.html">Portfolio page</a>
+          </li>
         </ul>
       </nav>
       <ul class="header-networks">
@@ -57,7 +57,7 @@
             class="header-networks-link"
             href="https://instagram.com"
             target="_blank"
-            rel="noopener noroferrer"
+            rel="noopener noreferrer"
           >
             <img src="./images/header/instagram.svg" alt="Instagram logo" width="24" height="24" />
           </a>
@@ -67,7 +67,7 @@
             class="header-networks-link"
             href="https://twitter.com"
             target="_blank"
-            rel="noopener noroferrer"
+            rel="noopener noreferrer"
           >
             <img src="./images/header/twitter.svg" alt="Twitter logo" width="24" height="24" />
           </a>
@@ -91,8 +91,8 @@
         <ul>
           <li>
             <img src="./images/benefits/icon-1.svg" alt="" width="32" height="32" />
-            <h3>Unsurpassed taste</h3>
-            <p>
+            <h3 class="subtitle subtitle-accent">Unsurpassed taste</h3>
+            <p class="benefits-desc">
               Crafted with the finest quality cocoa beans and a dedication to perfection, each bite
               is a decadent experience that simply cannot be matched. Savor the richness and
               complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.
@@ -100,8 +100,8 @@
           </li>
           <li>
             <img src="./images/benefits/icon-2.svg" alt="" width="32" height="32" />
-            <h3>Affordable price</h3>
-            <p
+            <h3 class="subtitle subtitle-accent">Affordable price</h3>
+            <p class="benefits-desc"
               >Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's s
               election of affordable treats. Enjoy mouth-watering truffles and velvety chocolate
               bars without sacrificing taste or quality. Browse our selection and indulge in
@@ -110,8 +110,8 @@
           </li>
           <li>
             <img src="./images/benefits/icon-3.svg" alt="" width="32" height="32" />
-            <h3>Own production</h3>
-            <p>
+            <h3 class="subtitle subtitle-accent">Own production</h3>
+            <p class="benefits-desc">
               We take pride in our own production process, ensuring that every step is carefully
               crafted to perfection. From selecting the finest ingredients to handcrafting each
               piece, our attention to detail is evident in every bite.
@@ -121,7 +121,9 @@
       </section>
       <!-- Ingridients section -->
       <section class="section ingridients">
-        <h2><span></span></h2>
+        <h2 class="title"
+          >IT ALL ADDS UP TO ONE EXCEPTIONAL <span class="title-accent">TASTE</span> SENSATION</h2
+        >
         <p></p>
         <ul>
           <li>
@@ -154,9 +156,11 @@
       </section>
       <!-- How it's made section -->
       <section class="section made" id="how">
-        <h2>hOW IT’S <span>made?</span></h2>
+        <h2 class="title">hOW IT’S <span class="title-accent">made?</span></h2>
         <img src="./images/made/img.png" alt="" width="600" height="400" />
-        <h3>Try our chocolates today and discover the perfect balance of flavor</h3>
+        <h3 class="subtitle"
+          >Try our chocolates today and discover the perfect balance of flavor</h3
+        >
         <ul>
           <li>
             Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.
@@ -175,11 +179,11 @@
       </section>
       <!-- Reviews section -->
       <section class="section reciews" id="reviews">
-        <h2><span>chocolate</span> is loved</h2>
+        <h2 class="title"><span class="title-accent">chocolate</span> is loved</h2>
         <ul>
           <li>
             <img src="./images/reviews/img-1.png" alt="" width="80" height="80" />
-            <h3>Victoria Dobrzhanska</h3>
+            <h3 class="subtitle">Victoria Dobrzhanska</h3>
             <p
               >I love this chocolate bar. Perfect combination of light crispy wafer, covered in a
               thin layer chocolate.</p
@@ -187,7 +191,7 @@
           </li>
           <li>
             <img src="./images/reviews/img-2.png" alt="" width="80" height="80" />
-            <h3>Nazar Babenko</h3>
+            <h3 class="subtitle">Nazar Babenko</h3>
             <p
               >This chocolate confection is a delight! A delight! The wafer is light and crisp, the
               hazelnut cream is smooth, and the chocolate is good.</p
@@ -195,7 +199,7 @@
           </li>
           <li>
             <img src="./images/reviews/img-3.png" alt="" width="80" height="80" />
-            <h3>Olena Kampusch</h3>
+            <h3 class="subtitle">Olena Kampusch</h3>
             <p>
               Chocolate is a family favourite treat. Love the delicious smooth chocolate and the
               creaminess inside. The wafer is soft but crunchy.</p
