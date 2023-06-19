@@ -1,13 +1,13 @@
 :root {
   /* Font */
   --primary-font: Montserrat, sans-serif;
-  --secondary-font: Roboto, sans-serif;
 
   /* Colors */
   --main-dark-cl: #111111;
   --main-light-cl: #ffffff;
   --accent-cl: #fd9222;
-  --grey-cl: rgba(255, 255, 255, 0.7);
+  --grey-cl: rgba(17, 17, 17, 0.7);
+  --light-grey-cl: rgba(255, 255, 255, 0.7);
   --main-dark-bg: #1e1823;
 
   /* Others */
@@ -20,23 +20,20 @@
 */
 body {
   font-family: var(--primary-font);
-  color: var(--main-dark-cl);
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
+  color: var(--main-dark-cl);
 }
 /* Reset */
-.list,
 ul,
 ol {
   list-style: none;
 }
-.link,
 a {
   text-decoration: none;
   color: currentColor;
 }
-.btn,
 button {
   font-family: inherit;
   cursor: pointer;
@@ -126,21 +123,142 @@ button {
   background-color: var(--accent-cl);
 }
 .hero-link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--main-light-cl);
+  background-color: transparent;
+}
+.scroll-down-btn {
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  color: var(--main-light-cl);
+  background-color: transparent;
 }
 /**
   |============================
   | Benefits styles
   |============================
 */
-.benefits-desc {
-  color: var(--grey-cl);
-}
-
-/**
-  |============================
-  | Benefits section
-  |============================
-*/
 .benefits {
   background-color: var(--main-dark-bg);
+}
+.benefits-list {
+}
+.benefits-item {
+}
+.benefits-img {
+}
+.benefits-desc {
+  color: var(--light-grey-cl);
+}
+/**
+  |============================
+  | Ingridients styles
+  |============================
+*/
+.ingridients {
+}
+.ingridients-desc {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: var(--main-dark-cl);
+}
+.ingridients-list {
+}
+.ingridients-item {
+}
+.ingridients-item.orange {
+  background-color: var(--accent-cl);
+}
+.ingridients-item.dark {
+  background-color: var(--main-dark-bg);
+}
+.ingridients-img {
+}
+.ingridients-subtitle {
+  text-transform: uppercase;
+}
+.ingridients-subtitle.light {
+  color: var(--main-light-cl);
+}
+/**
+  |============================
+  | How it's made styles
+  |============================
+*/
+.made {
+}
+.made-img {
+}
+.made-list {
+}
+.made-item {
+}
+/**
+  |============================
+  | Reviews styles
+  |============================
+*/
+.reviews {
+}
+.reviews-list {
+}
+.reviews-item {
+}
+.reviews-img {
+}
+.reviews-subtitle {
+}
+.reviews-text {
+  color: var(--grey-cl);
+}
+.reviews-btn {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--main-dark-cl);
+  background-color: transparent;
+}
+/**
+  |============================
+  | Footer styles
+  |============================
+*/
+.footer {
+  background-color: var(--main-dark-bg);
+}
+.footer-slogan {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  color: var(--main-light-cl);
+}
+.footer-slogan-accent {
+  color: var(--accent-cl);
+}
+.footer-address {
+  font-style: normal;
+}
+.footer-addres-heading {
+  font-weight: 500;
+  text-align: center;
+  color: var(--main-light-cl);
+}
+.footer-address-list {
+}
+.footer-address-item {
+}
+.footer-address-link {
+  color: var(--main-light-cl);
+}
+.footer-nav {
+}
+.footer-nav-item {
+}
+.footer-nav-link {
+  line-height: 1.14;
+  color: var(--main-light-cl);
 }
