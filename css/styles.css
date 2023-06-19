@@ -1,13 +1,13 @@
 :root {
   /* Font */
   --primary-font: Montserrat, sans-serif;
-  --secondary-font: Roboto, sans-serif;
 
   /* Colors */
   --main-dark-cl: #111111;
   --main-light-cl: #ffffff;
   --accent-cl: #fd9222;
-  --grey-cl: rgba(255, 255, 255, 0.7);
+  --grey-cl: rgba(17, 17, 17, 0.7);
+  --light-grey-cl: rgba(255, 255, 255, 0.7);
   --main-dark-bg: #1e1823;
 
   /* Others */
@@ -20,29 +20,53 @@
 */
 body {
   font-family: var(--primary-font);
-  color: var(--main-dark-cl);
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
+  color: var(--main-dark-cl);
 }
 /* Reset */
-.list,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+}
 ul,
 ol {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.link,
 a {
   text-decoration: none;
   color: currentColor;
 }
-.btn,
 button {
   font-family: inherit;
   cursor: pointer;
 }
 /* Base styles */
 .section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container {
+  width: 1168px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
 
 .title {
@@ -57,6 +81,8 @@ button {
   color: var(--accent-cl);
 }
 .subtitle {
+  margin-bottom: 18px;
+
   font-weight: 600;
   font-size: 18px;
   line-height: 1.22;
@@ -71,10 +97,24 @@ button {
   |============================
 */
 .header {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .header-nav {
+  display: flex;
+  align-items: center;
 }
 .header-logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-right: 447px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 1.11;
@@ -87,6 +127,9 @@ button {
 .header-img {
 }
 .header-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 .header-item {
 }
@@ -98,6 +141,9 @@ button {
   color: var(--main-dark-cl);
 }
 .header-networks {
+  display: flex;
+  align-items: center;
+  gap: 18px;
 }
 .header-networks-item {
 }
@@ -109,6 +155,9 @@ button {
   |============================
 */
 .hero {
+  padding-top: 381px;
+  padding-bottom: 40px;
+  margin-bottom: 72px;
   background-color: var(--main-dark-bg);
 }
 .hero-title {
@@ -126,21 +175,152 @@ button {
   background-color: var(--accent-cl);
 }
 .hero-link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--main-light-cl);
+  background-color: transparent;
+}
+.scroll-down-btn {
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  color: var(--main-light-cl);
+  background-color: transparent;
 }
 /**
   |============================
   | Benefits styles
   |============================
 */
-.benefits-desc {
-  color: var(--grey-cl);
-}
-
-/**
-  |============================
-  | Benefits section
-  |============================
-*/
 .benefits {
   background-color: var(--main-dark-bg);
+}
+.benefits-list {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.benefits-item {
+  width: 308px;
+}
+.benefits-img {
+  margin-bottom: 22px;
+}
+.benefits-desc {
+  color: var(--light-grey-cl);
+}
+/**
+  |============================
+  | Ingridients styles
+  |============================
+*/
+.ingridients {
+  padding-top: 100px;
+}
+.ingridients-desc {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: var(--main-dark-cl);
+}
+.ingridients-list {
+}
+.ingridients-item {
+}
+.ingridients-item.orange {
+  background-color: var(--accent-cl);
+}
+.ingridients-item.dark {
+  background-color: var(--main-dark-bg);
+}
+.ingridients-img {
+}
+.ingridients-subtitle {
+  text-transform: uppercase;
+}
+.ingridients-subtitle.light {
+  color: var(--main-light-cl);
+}
+/**
+  |============================
+  | How it's made styles
+  |============================
+*/
+.made {
+}
+.made-img {
+}
+.made-list {
+}
+.made-item {
+}
+/**
+  |============================
+  | Reviews styles
+  |============================
+*/
+.reviews {
+  padding-bottom: 100px;
+}
+.reviews-list {
+}
+.reviews-item {
+}
+.reviews-img {
+}
+.reviews-subtitle {
+}
+.reviews-text {
+  color: var(--grey-cl);
+}
+.reviews-btn {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--main-dark-cl);
+  background-color: transparent;
+}
+/**
+  |============================
+  | Footer styles
+  |============================
+*/
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--main-dark-bg);
+}
+.footer-slogan {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  color: var(--main-light-cl);
+}
+.footer-slogan-accent {
+  color: var(--accent-cl);
+}
+.footer-address {
+  font-style: normal;
+}
+.footer-addres-heading {
+  font-weight: 500;
+  text-align: center;
+  color: var(--main-light-cl);
+}
+.footer-address-list {
+}
+.footer-address-item {
+}
+.footer-address-link {
+  color: var(--main-light-cl);
+}
+.footer-nav {
+}
+.footer-nav-item {
+}
+.footer-nav-link {
+  line-height: 1.14;
+  color: var(--main-light-cl);
 }
