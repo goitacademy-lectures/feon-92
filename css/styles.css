@@ -175,11 +175,19 @@ button {
   background-color: var(--accent-cl);
 }
 .hero-link {
+  display: inline-flex;
+  min-width: 183px;
+  min-height: 45px;
+  padding: 14px 40px;
+
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
   color: var(--main-light-cl);
   background-color: transparent;
+
+  border: 1px solid #ffffff;
+  border-radius: 100px;
 }
 .scroll-down-btn {
   font-weight: 500;
