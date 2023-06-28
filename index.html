@@ -32,17 +32,13 @@
         <nav class="header-nav">
           <a class="header-logo link" href="./index.html">
             <span class="header-logo-italic">SIMPLY</span>CHOCOLATE
-            <img
-              class="header-img"
-              src="./images/header/logo.svg"
-              alt="Simply Chocolate logo"
-              width="24"
-              height="24"
-            />
+            <svg class="header-img" width="24" height="24">
+              <use href="./images/icons.svg#logo"></use>
+            </svg>
           </a>
           <ul class="header-list">
             <li class="header-item">
-              <a class="header-link" href="./index.html">Home</a>
+              <a class="header-link active" href="./index.html">Home</a>
             </li>
             <li class="header-item">
               <a class="header-link" href="#how">How it’s made?</a>
@@ -60,12 +56,6 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <!-- <img
-                src="./images/header/instagram.svg"
-                alt="Instagram logo"
-                width="24"
-                height="24"
-              /> -->
               <svg class="header-networks-icon" width="24" height="24">
                 <use href="./images/icons.svg#instagram"></use>
               </svg>
@@ -78,7 +68,6 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <!-- <img src="./images/header/twitter.svg" alt="Twitter logo" width="24" height="24" /> -->
               <svg class="header-networks-icon" width="24" height="24">
                 <use href="./images/icons.svg#twitter"></use>
               </svg>
@@ -183,14 +172,29 @@
           </p>
           <ul class="ingridients-list card-set">
             <li class="ingridients-item card-set-item">
-              <img
-                class="ingridients-img"
-                src="./images/ingridients/img-1.png"
-                alt="mILK CHOCOLATE"
-                width="206"
-                height="160"
-              />
-              <h3 class="ingridients-subtitle light">mILK CHOCOLATE</h3>
+              <div class="ingridients-wrapper">
+                <img
+                  class="ingridients-img"
+                  src="./images/ingridients/img-1.png"
+                  alt="mILK CHOCOLATE"
+                  width="206"
+                  height="160"
+                />
+                <h3 class="ingridients-subtitle light">mILK CHOCOLATE</h3>
+              </div>
+              <div class="overlay">
+                <h3 class="overlay-title">Milk chocolate</h3>
+                <div class="overlay-wrapper">
+                  <p class="overlay-label">chocolate</p>
+                  <p class="overlay-label active">the benefits</p>
+                </div>
+                <p class="overlay-desc"
+                  >Milk chocolate is a solid chocolate confectionery containing cocoa, sugar and
+                  milk. It is the most consumed type of chocolate. Chocolate was originally sold and
+                  consumed as a beverage in pre-Columbian times. Although four-fifths of all milk
+                  chocolate is sold in the United States and Europe.</p
+                >
+              </div>
             </li>
             <li class="ingridients-item card-set-item">
               <img
@@ -319,62 +323,11 @@
               </div>
             </li>
           </ul>
-          <button class="reviews-btn btn secondary-btn" type="button">Leave a review</button>
+          <button class="reviews-btn btn secondary-btn" type="button" data-modal-open
+            >Leave a review</button
+          >
         </div>
       </section>
-      <!-- Clients -->
-      <!-- <section class="section">
-        <div class="container">
-          <ul class="clients-list">
-            <li class="clients-item">
-              <a class="clients-link" href="" aria-label="Logo 1">
-                <svg class="clients-icon" width="104" height="56">
-                  <use href="./images/sprite.svg#icon-logo-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients-item">
-              <a class="clients-link" href="" aria-label="Logo 2">
-                <svg class="clients-icon" width="104" height="56">
-                  <use href="./images/sprite.svg#icon-logo-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients-item">
-              <a class="clients-link" href="" aria-label="Logo 3">
-                <svg class="clients-icon" width="104" height="56">
-                  <use href="./images/sprite.svg#icon-logo-3"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients-item">
-              <a class="clients-link" href="" aria-label="Logo 4">
-                <svg class="clients-icon" width="104" height="56">
-                  <use href="./images/sprite.svg#icon-logo-4"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients-item">
-              <a class="clients-link" href="" aria-label="Logo 5">
-                <svg class="clients-icon" width="104" height="56">
-                  <use href="./images/sprite.svg#icon-logo-5"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="clients-item">
-              <a class="clients-link" href="" aria-label="Logo 6">
-                <svg class="clients-icon" width="104" height="56">
-                  <use href="./images/sprite.svg#icon-logo-6"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-
-          <svg class="burger" width="32" height="22">
-            <use href="./images/sprite.svg#menu"></use>
-          </svg>
-        </div>
-      </section> -->
     </main>
     <!-- Footer section -->
     <footer class="footer">
@@ -412,5 +365,17 @@
         </div>
       </div>
     </footer>
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-icon" width="28" height="28">
+            <use href="./images/icons.svg#x-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
