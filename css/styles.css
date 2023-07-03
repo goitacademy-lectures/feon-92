@@ -536,6 +536,10 @@ button {
   background-color: #fafafa;
 }
 .overlay-desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 /**
   |============================
