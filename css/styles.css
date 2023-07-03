@@ -777,6 +777,7 @@ button {
 
   width: 517px;
   height: 794px;
+  padding: 40px;
 
   background-color: #fafafa;
   border-radius: 15px;
@@ -806,4 +807,69 @@ button {
 }
 .modal-icon {
   stroke: #111111;
+}
+.modal-caption {
+  display: block;
+  width: 298px;
+  margin-bottom: 40px;
+
+  color: #111;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+}
+.modal-form {
+}
+
+.modal-form-field {
+  position: relative;
+  display: block;
+  margin-bottom: 18px;
+}
+.modal-form-label {
+  display: block;
+  margin-bottom: 8px;
+
+  color: rgba(64, 64, 64, 0.3);
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: -0.28px;
+}
+.modal-form-input {
+  width: 100%;
+  height: 68px;
+  padding: 22px 64px;
+
+  font-size: 24px;
+
+  border-radius: 13px;
+  border: 1px solid rgba(17, 17, 17, 0.05);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.03);
+  outline: transparent;
+
+  transition: border-color var(--anim);
+}
+.modal-form-input:focus {
+  border-color: var(--accent-cl);
+}
+.modal-form-input::placeholder {
+  opacity: 0;
+  transition: opacity 250ms ease 300ms;
+}
+.modal-form-input:focus::placeholder {
+  opacity: 1;
+}
+.modal-form-icon {
+  position: absolute;
+  left: 24px;
+  bottom: 22px;
+
+  fill: none;
+  stroke: rgb(64, 64, 64);
+  transition: stroke var(--anim);
+}
+.modal-form-input:focus + .modal-form-icon {
+  stroke: var(--accent-cl);
 }

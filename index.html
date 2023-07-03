@@ -410,6 +410,10 @@
               <a class="footer-nav-link" href="#reviews">Chocolate is loved</a>
             </li>
           </ul>
+          <form>
+            <input type="text" />
+            <button type="submit">Subscribe</button>
+          </form>
         </div>
       </div>
     </footer>
@@ -421,9 +425,58 @@
             <use href="./images/icons.svg#x-close"></use>
           </svg>
         </button>
+
+        <strong class="modal-caption">
+          LEAVE A REVIEW ABOUT <span class="title-accent">OUR CHOCOLATE</span>
+        </strong>
+
+        <form class="modal-form" name="review_form" autocomplete="off">
+          <label class="modal-form-field">
+            <span class="modal-form-label">Name</span>
+            <input
+              class="modal-form-input"
+              type="text"
+              name="user_name"
+              placeholder="Antony Black"
+            />
+            <svg class="modal-form-icon" width="24" height="24">
+              <use href="./images/icons.svg#user"></use>
+            </svg>
+          </label>
+
+          <label class="modal-form-field">
+            <span class="modal-form-label">Email</span>
+            <input
+              class="modal-form-input"
+              type="email"
+              name="user_email"
+              placeholder="example@mail.com"
+            />
+            <svg class="modal-form-icon" width="24" height="24">
+              <use href="./images/icons.svg#mail"></use>
+            </svg>
+          </label>
+
+          <label class="modal-form-field">
+            <span class="modal-form-label">Phone number</span>
+            <input
+              class="modal-form-input"
+              type="tel"
+              name="user_phone"
+              placeholder="+38 (099) 123-45-67"
+              value=""
+            />
+            <svg class="modal-form-icon" width="24" height="24">
+              <use href="./images/icons.svg#phone"></use>
+            </svg>
+          </label>
+
+          <button class="btn accent-btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
 
     <script src="./js/modal.js"></script>
+    <!-- <script src="./js/form.js"></script> -->
   </body>
 </html>
