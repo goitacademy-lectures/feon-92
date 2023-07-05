@@ -11,3 +11,6 @@ form.addEventListener('submit', event => {
 
   console.log('🚀 ~ event.target.name:', event.target.name);
 });
+
+const firstMaxNumber = 5;
+const first_max_number = 5;

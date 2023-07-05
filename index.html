@@ -410,9 +410,21 @@
               <a class="footer-nav-link" href="#reviews">Chocolate is loved</a>
             </li>
           </ul>
-          <form>
-            <input type="text" />
-            <button type="submit">Subscribe</button>
+          <form class="subscribe-form" name="subscribe_form">
+            <label class="subscribe-form-label">
+              <input
+                class="subscribe-form-input"
+                type="email"
+                name="subscribe_form-email"
+                placeholder="Enter your email"
+              />
+            </label>
+            <button class="footer-btn btn accent-btn" type="submit">
+              Subscribe
+              <svg class="footer-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -469,6 +481,29 @@
             <svg class="modal-form-icon" width="24" height="24">
               <use href="./images/icons.svg#phone"></use>
             </svg>
+          </label>
+
+          <label class="modal-form-field">
+            <span class="modal-form-label">Comment</span>
+            <textarea
+              class="modal-form-comment"
+              name="user_comment"
+              rows="4"
+              placeholder="Enter text"
+            ></textarea>
+          </label>
+
+          <label class="modal-form-agreement">
+            <input class="modal-form-checkbox visually-hidden" type="checkbox" />
+            <span class="modal-form-custom-checkbox">
+              <svg class="modal-form-checkbox-icon" width="10" height="10">
+                <use href="./images/icons.svg#icon-checked"></use>
+              </svg>
+            </span>
+            <span class="modal-form-agreement-desc">
+              I accept the terms and conditions of the
+              <a class="modal-form-link" href="#">Privacy Policy</a>
+            </span>
           </label>
 
           <button class="btn accent-btn" type="submit">Send</button>
