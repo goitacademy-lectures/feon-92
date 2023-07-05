@@ -1,4 +1,5 @@
 :root {
+  scroll-behavior: smooth;
   /* Font */
   --primary-font: Montserrat, sans-serif;
 
@@ -37,9 +38,6 @@ body {
   letter-spacing: -0.02em;
   color: var(--main-dark-cl);
   background-color: var(--page-color);
-
-  /* Зображення паттерн */
-  /* background-image: url('data:image/svg+xml,%3Csvg width="52" height="26" viewBox="0 0 52 26" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z" /%3E%3C/g%3E%3C/g%3E%3C/svg%3E'); */
 }
 /* Reset */
 h1,
@@ -67,6 +65,18 @@ a {
 button {
   font-family: inherit;
   cursor: pointer;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 /* Base styles */
 .section {
@@ -127,10 +137,6 @@ button {
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: var(--btn-radius);
-
-  /* transition-property: color, background-color, border-color;
-  transition-duration: 400ms;
-  transition-timing-function: ease-in; */
 
   transition: color 400ms ease-in, background-color 400ms ease-in, border-color 400ms ease-in;
 }
@@ -285,18 +291,8 @@ button {
 */
 .hero {
   padding-bottom: 72px;
-
-  /* max-width: 1440px;
-  margin: 0 auto;
-  background-image: url(../images/hero/bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
 }
 .hero-container {
-  /* outline: 2px solid red;
-  outline-offset: -2px; */
-
   padding-top: 381px;
   padding-bottom: 40px;
   padding-left: 56px;
@@ -304,33 +300,11 @@ button {
 
   border-radius: 30px;
   background-color: var(--main-dark-bg);
-  /* background-image: linear-gradient(
-      rgba(148, 148, 148, 0.4) 100px,
-      rgba(186, 81, 81, 0.4) 100px,
-      rgba(43, 55, 149, 0.4),
-      rgba(220, 31, 207, 0.4)
-    ),
-    url(../images/hero/bg.jpg); */
-  /* background-image: var(--main-gradient), url(../images/hero/bg.jpg); */
   background-image: url(../images/hero/bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  /* background-position: top 50% right calc(50% + 300px); */
-  /* background-clip: border-box; */
-  /* background-attachment: fixed; */
 }
-/* .text-image {
-  font-size: 120px;
-  font-weight: 900;
-  color: transparent;
-  background-image: url(../images/hero/bg.jpg);
-  background-position: center right 200px;
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-attachment: fixed;
-} */
 .hero-title {
   width: 484px;
   margin-bottom: 32px;
@@ -591,7 +565,6 @@ button {
   border: 1px solid rgba(236, 237, 237, 1);
   border-radius: 50%;
 }
-
 /**
   |============================
   | Reviews styles
@@ -689,8 +662,16 @@ button {
 }
 .footer-address-link {
   color: var(--main-light-cl);
+  transition: color var(--anim);
+}
+.footer-address-link:hover,
+.footer-address-link:focus {
+  color: var(--accent-cl);
 }
 .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+
   padding-top: 24px;
 }
 .footer-nav {
@@ -706,38 +687,52 @@ button {
 
   line-height: 1.14;
   color: var(--main-light-cl);
+  transition: color var(--anim);
 }
-
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  color: var(--accent-cl);
+}
 /**
   |============================
-  | Clients
+  | Footer subscribe form
   |============================
 */
-.clients-list {
+.subscribe-form {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  gap: 8px;
 }
-.clients-item {
+.subscribe-form-label {
 }
-.clients-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.subscribe-form-input {
+  width: 313px;
+  height: 52px;
+  padding: 14px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  background-color: transparent;
+  outline: transparent;
 
-  width: 168px;
-  height: 88px;
-
-  border: 2px solid var(--main-dark-cl);
-  border-radius: var(--small-radius);
+  font-size: 18px;
+  letter-spacing: -0.36px;
+  color: rgba(255, 255, 255, 0.3);
 
   transition: border-color var(--anim);
 }
-.clients-link:hover {
-  border-color: #fd9222;
+.subscribe-form-input:focus {
+  border-color: var(--accent-cl);
 }
-.clients-link:hover .clients-icon {
-  fill: #fd9222;
+.subscribe-form-input::placeholder {
+  color: currentColor;
+}
+.footer-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 16px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 /**
   |============================
@@ -872,4 +867,71 @@ button {
 }
 .modal-form-input:focus + .modal-form-icon {
   stroke: var(--accent-cl);
+}
+
+.modal-form-comment {
+  width: 100%;
+  height: 137px;
+  padding: 22px 24px;
+
+  font-size: 18px;
+  letter-spacing: -0.36px;
+  color: rgba(64, 64, 64, 0.3);
+
+  outline: transparent;
+  border-radius: 13px;
+  border: 1px solid rgba(17, 17, 17, 0.05);
+  resize: none;
+  transition: border-color var(--anim);
+}
+.modal-form-comment:focus {
+  border-color: var(--accent-cl);
+}
+.modal-form-comment::placeholder {
+  color: currentColor;
+}
+/* agreement block */
+.modal-form-agreement {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 40px;
+}
+
+.modal-form-custom-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 20px;
+  height: 20px;
+
+  border: 1px solid rgba(17, 17, 17, 0.14);
+  border-radius: 6px;
+
+  transition: border-color var(--anim), background-color var(--anim);
+}
+
+.modal-form-checkbox:checked + .modal-form-custom-checkbox {
+  border-color: var(--accent-cl);
+  background-color: var(--accent-cl);
+}
+
+.modal-form-checkbox-icon {
+  opacity: 0;
+  transform: scale(0.3);
+  transition: opacity 300ms cubic-bezier(0, 0, 1, 1.8) 150ms,
+    transform 300ms cubic-bezier(0, 0, 1, 1.8) 150ms;
+}
+.modal-form-checkbox:checked + .modal-form-custom-checkbox > .modal-form-checkbox-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+.modal-form-agreement-desc {
+  user-select: none;
+}
+.modal-form-link {
+  color: var(--accent-cl);
+  text-decoration: underline;
 }
