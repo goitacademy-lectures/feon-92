@@ -50,5 +50,8 @@
     <symbol id="icon-send" viewBox="0 0 24 24">
       <path fill="#fff" d="M24 2 0 13.25l7.67 2.367L19.5 6.375l-8.998 10.116.007.003-.009-.003V22l4.301-4.182 5.45 1.682L24 2Z"/>
     </symbol>
+    <symbol id="menu-icon" viewBox="0 0 32 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.2857" d="M4 16h24M4 8h24M4 24h24"></path>
+    </symbol>
   </defs>
 </svg>
