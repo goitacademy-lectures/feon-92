@@ -84,10 +84,11 @@
     <!-- Main block -->
     <main class="main">
       <!-- Hero section -->
-      <!-- <section class="hero" id="section">
+      <section class="hero" id="section">
         <div class="hero-container container">
           <h1 class="hero-title">
-            Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
+            Treat yourself or a loved one to our&nbsp;finest ingredients for a moment of pure
+            delight!
           </h1>
           <div class="hero-controls">
             <button class="btn accent-btn" type="button">Buy now</button>
@@ -102,7 +103,7 @@
             </button>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- Benefits section -->
       <section class="benefits section">
         <div class="container">
@@ -164,7 +165,7 @@
         </div>
       </section>
       <!-- Ingridients section -->
-      <!-- <section class="ingridients section">
+      <section class="ingridients section">
         <div class="container">
           <h2 class="ingridients-title title">
             IT ALL ADDS UP TO ONE EXCEPTIONAL <span class="title-accent">TASTE</span> SENSATION
@@ -179,10 +180,14 @@
               <div class="ingridients-wrapper">
                 <img
                   class="ingridients-img"
-                  src="./images/ingridients/img-1.png"
+                  srcset="
+                    ./images/ingridients/img-1@1x.png 1x,
+                    ./images/ingridients/img-1@2x.png 2x
+                  "
+                  src="./images/ingridients/img-1@1x.png"
                   alt="mILK CHOCOLATE"
-                  width="206"
-                  height="160"
+                  width="224"
+                  height="171"
                 />
                 <h3 class="ingridients-subtitle light">mILK CHOCOLATE</h3>
               </div>
@@ -204,10 +209,14 @@
               <div class="ingridients-wrapper">
                 <img
                   class="ingridients-img"
-                  src="./images/ingridients/img-2.png"
+                  srcset="
+                    ./images/ingridients/img-2@1x.png 1x,
+                    ./images/ingridients/img-2@2x.png 2x
+                  "
+                  src="./images/ingridients/img-2@1x.png"
                   alt="Milk"
-                  width="206"
-                  height="160"
+                  width="224"
+                  height="171"
                 />
                 <h3 class="ingridients-subtitle">Milk</h3>
               </div>
@@ -229,10 +238,14 @@
               <div class="ingridients-wrapper">
                 <img
                   class="ingridients-img"
-                  src="./images/ingridients/img-3.png"
+                  srcset="
+                    ./images/ingridients/img-3@1x.png 1x,
+                    ./images/ingridients/img-3@2x.png 2x
+                  "
+                  src="./images/ingridients/img-3@1x.png"
                   alt="Nuts"
-                  width="206"
-                  height="160"
+                  width="224"
+                  height="171"
                 />
                 <h3 class="ingridients-subtitle light">nuts</h3>
               </div>
@@ -256,10 +269,14 @@
               <div class="ingridients-wrapper">
                 <img
                   class="ingridients-img"
-                  src="./images/ingridients/img-4.png"
+                  srcset="
+                    ./images/ingridients/img-4@1x.png 1x,
+                    ./images/ingridients/img-4@2x.png 2x
+                  "
+                  src="./images/ingridients/img-4@1x.png"
                   alt="Semi-sweet chocolate"
-                  width="206"
-                  height="160"
+                  width="224"
+                  height="171"
                 />
                 <h3 class="ingridients-subtitle">sEMI - SWEET CHOCOLATE</h3>
               </div>
@@ -280,10 +297,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- How it's made section -->
-      <!-- <section class="made section made" id="how">
-        <div class="container">
+      <section class="made section" id="how">
+        <div class="made-container container">
           <h2 class="made-title title">hOW IT’S <span class="title-accent">made?</span></h2>
           <div class="made-wrapper">
             <div class="made-left-side">
@@ -314,9 +331,9 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- Reviews section -->
-      <!-- <section class="reviews section" id="reviews">
+      <section class="reviews section" id="reviews">
         <div class="container">
           <h2 class="title"><span class="title-accent">chocolate</span> is loved</h2>
           <ul class="reviews-list card-set">
@@ -379,10 +396,10 @@
             >Leave a review</button
           >
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- Footer section -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-top">
           <p class="footer-slogan"
@@ -423,16 +440,11 @@
                 placeholder="Enter your email"
               />
             </label>
-            <button class="footer-btn btn accent-btn" type="submit">
-              Subscribe
-              <svg class="footer-btn-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
+            <button class="footer-btn btn accent-btn" type="submit"> Subscribe </button>
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
